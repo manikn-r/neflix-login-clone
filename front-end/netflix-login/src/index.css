@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#root{
+  background: #000;
+  color: #fff;
+}
+.container{
+  background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%), 
+    url('./assets/bg.jpg'); /* <-- Paste the image link here */
+
+  /* 2. Make it cover the entire screen perfectly */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+      /* margin: 15px 0; */
+      .header{
+        display: flex;
+    justify-content: space-around;
+        padding: 20px 0;
+        align-items: center;
+      }
+      .logo{
+        img{
+          width: 9.25rem;
+                height: 4.5rem;
+    color: rgb(229, 9, 20);
+    display: block;
+        }
+      }
+      .sign{
+        button{
+              padding: 5px;
+    background: rgb(229, 9, 20);
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+        }
+      }
+      .form{
+            flex-direction: column;
+    display: flex;
+    /* width: 25%; */
+    /* justify-content: center; */
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    input{
+      width: 20%;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 3px;
+    background: #000;
+    border: 1px solid red;
+    }
+    button{
+          width: 30%;
+    font-weight: bold;
+    padding: 10px;
+    background: rgb(229, 9, 20);
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    }
+      }
+      .content{
+color: #fff;
+        display: flex;
+        /* justify-content: space-between; */
+        margin: auto;
+        max-width: 302px;
+        /* width: 100px; */
+        padding: 20px 0;
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+}
+
+.containerTwo{
+      /* margin: 10px; */
+          padding: 10px;
+    position: relative;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #141414;
+    .activeMovie{
+      
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+        width: 100%;
+    height: 100%;
+    background-image: url('./assets/bg02.jpg');
+    /* background-image:     linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%), 
+    url('./assets/movie02.jpg');; */
+      
+    }
+    .logo{
+      img{
+            width: 9.25rem;
+    height: 4.5rem;
+    color: rgb(229, 9, 20);
+    /* display: block; */
+    position: absolute;
+    z-index: 2;
+      }
+    }
+}
+.watchNowTitle{
+      margin: 10px;
+}
+.watchNow{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.movies{
+    flex-basis: 25%;
+    img{
+      height: 200px;
+    }
+    p{
+          font-weight: bold;
+    padding: 5px;
+    }
+}
