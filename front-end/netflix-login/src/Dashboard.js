@@ -1,8 +1,8 @@
-import movie02 from "./assets/movie02.jpg"
+
 import movie03 from "./assets/movie03.jpg"
 import movie04 from "./assets/movie04.jpg"
 import movie05 from "./assets/movie05.jpg"
-import bg02 from "./assets/bg02.jpg"
+
 import logo from "./assets/logo3.png";
 function Dashboard() {
     return (<>
