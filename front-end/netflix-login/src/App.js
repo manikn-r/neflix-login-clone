@@ -16,7 +16,7 @@ function App() {
     if (name.trim() === "" || password.trim() === "") {
       return window.alert("Enter valid username and password !")
     }
-    let url = axios.post("http://localhost:3001/login", payload)
+    let url = axios.post("https://neflix-login-clone.onrender.com/login", payload)
     url.then((res) => {
       console.log(res);
       if (res.data)

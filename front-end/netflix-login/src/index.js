@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import Dashboard from './Dashboard';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route,Navigate } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
     <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/login" element={<App/>}></Route>
         <Route path="/dashboard" element={<Dashboard/>}></Route>
     </Routes>
